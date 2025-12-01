@@ -1,4 +1,3 @@
-
 #include "OS_Taskconfig_Stub.h"
 
 uint16 Task_Stack[256];

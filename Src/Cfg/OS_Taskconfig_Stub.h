@@ -16,6 +16,8 @@ extern "C" {
 
 extern void Task(void);
 extern void Task2(void);
+extern void LCD_Driver_Runnable(void);
+extern void DataDisplay_Runnable(void);
 
 #define TICK_PERIOD_US  1000
 

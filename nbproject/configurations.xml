@@ -33,6 +33,8 @@
       <itemPath>Src/Cfg/config.h</itemPath>
       <itemPath>Src/Cfg/OS_Config_Stub.h</itemPath>
       <itemPath>Src/Cfg/OS_Taskconfig_Stub.h</itemPath>
+      <itemPath>Src/LCD_Driver.h</itemPath>
+      <itemPath>Src/SHT_Driver.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -63,10 +65,14 @@
       </logicalFolder>
       <itemPath>Src/main.c</itemPath>
       <itemPath>Src/Cfg/OS_Tasklist_Stub.c</itemPath>
+      <itemPath>Src/DataDisplay.c</itemPath>
+      <itemPath>Src/LCD_Driver.c</itemPath>
+      <itemPath>Src/SHT_Driver.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>PIC24FJ_OS</Elem>
+    <Elem>Src</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -227,7 +233,7 @@
       </C30-LD>
       <C30Global>
         <property key="combine-sourcefiles" value="false"/>
-        <property key="common-include-directories" value=""/>
+        <property key="common-include-directories" value="PIC24FJ_OS\OS\Inc"/>
         <property key="dual-boot-partition" value="0"/>
         <property key="fast-math" value="false"/>
         <property key="generic-16-bit" value="false"/>

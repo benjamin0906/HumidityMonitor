@@ -10,6 +10,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>PIC24FJ_OS</sourceRootElem>
+                <sourceRootElem>Src</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
