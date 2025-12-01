@@ -6,15 +6,17 @@
             <name>HumidityMonitor</name>
             <creation-uuid>64756f11-6740-4102-94d0-1d974ca2e04d</creation-uuid>
             <make-project-type>0</make-project-type>
+            <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>PIC24FJ_OS</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>default</name>
                     <type>2</type>
                 </confElem>
             </confList>
-            <sourceEncoding>UTF-8</sourceEncoding>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>
             </formatting>

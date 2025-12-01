@@ -4,6 +4,35 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="PIC24FJ_OS" displayName="PIC24FJ_OS" projectFiles="true">
+        <logicalFolder name="OS" displayName="OS" projectFiles="true">
+          <logicalFolder name="Inc" displayName="Inc" projectFiles="true">
+            <itemPath>PIC24FJ_OS/OS/Inc/CORE.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/CORE_MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/GPIO.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/GPIO_MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/I2C.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/I2C_MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/IC.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/IC_MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/OS_Config.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/OS_Ext.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/OS_Tasklist.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/OS_Types.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/SC.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/SC_MemMap.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/Std_Types.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/TIM.h</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Inc/TIM_MemMap.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="Src" displayName="Src" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>Src/Cfg/config.h</itemPath>
+      <itemPath>Src/Cfg/OS_Config_Stub.h</itemPath>
+      <itemPath>Src/Cfg/OS_Taskconfig_Stub.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -17,8 +46,28 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="PIC24FJ_OS" displayName="PIC24FJ_OS" projectFiles="true">
+        <logicalFolder name="OS" displayName="OS" projectFiles="true">
+          <logicalFolder name="Inc" displayName="Inc" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="Src" displayName="Src" projectFiles="true">
+            <itemPath>PIC24FJ_OS/OS/Src/GPIO.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/I2C.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/IC.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/MemMap.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/OS.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/SC.c</itemPath>
+            <itemPath>PIC24FJ_OS/OS/Src/TIM.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>Src/main.c</itemPath>
+      <itemPath>Src/Cfg/OS_Tasklist_Stub.c</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>PIC24FJ_OS</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
