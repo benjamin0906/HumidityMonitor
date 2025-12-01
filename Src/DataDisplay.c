@@ -1,6 +1,7 @@
 #include "Std_Types.h"
 #include "SHT_Driver.h"
 #include "LCD_Driver.h"
+#include "../PIC24FJ_OS/OS/Inc/OS_Ext.h"
 
 void DataDisplay_Runnable(void);
 
@@ -43,21 +44,32 @@ void DataDisplay_Runnable(void)
             line[CharIndex++] = 'C';
             line[CharIndex++] = ' ';
 
-            t = Humidity / 1000;
-            if((uint8)t != 0)
+            if(Humidity != 0xFFFF)
             {
+                t = Humidity / 1000;
+                if((uint8)t != 0)
+                {
+                    line[CharIndex++] = '0' + (uint8)t;
+                    Humidity -= t*1000;
+                }
+                t = Humidity / 100;
+                Humidity -= t*100;
                 line[CharIndex++] = '0' + (uint8)t;
-                Humidity -= t*1000;
+                line[CharIndex++] = ',';
+                t = Humidity / 10;
+                Humidity -= t*10;
+                line[CharIndex++] = '0' + (uint8)t;
+                line[CharIndex++] = '0' + (uint8)((uint16)Humidity);
+                line[CharIndex++] = '%';
             }
-            t = Humidity / 100;
-            Humidity -= t*100;
-            line[CharIndex++] = '0' + (uint8)t;
-            line[CharIndex++] = ',';
-            t = Humidity / 10;
-            Humidity -= t*10;
-            line[CharIndex++] = '0' + (uint8)t;
-            line[CharIndex++] = '0' + (uint8)((uint16)Humidity);
-            line[CharIndex++] = '%';
+            else
+            {
+                line[CharIndex++] = 'E';
+                line[CharIndex++] = 'r';
+                line[CharIndex++] = 'r';
+                line[CharIndex++] = 'o';
+                line[CharIndex++] = 'r';
+            }
 
             LCD_ClearAndSet(Pos, line, CharIndex);
         }

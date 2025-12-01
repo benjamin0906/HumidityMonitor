@@ -89,77 +89,77 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ128GB202.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o: PIC24FJ_OS/OS/Src/GPIO.c  .generated_files/flags/default/9959f58c798eb9ea681722f84fbdfc978ac7f815 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o: PIC24FJ_OS/OS/Src/GPIO.c  .generated_files/flags/default/a2dab0fd594bb52492cc0095f44f822043d007c4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/GPIO.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/GPIO.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o: PIC24FJ_OS/OS/Src/I2C.c  .generated_files/flags/default/1d8e2407c12dcb2fe4d47272e9deab646a335fe2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o: PIC24FJ_OS/OS/Src/I2C.c  .generated_files/flags/default/5c3c7c2f7978244451e96b2fc2d19e54c32e614a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/I2C.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/I2C.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o: PIC24FJ_OS/OS/Src/IC.c  .generated_files/flags/default/f68bc52b19e30eef6425ef9eedddae61f1f523bb .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o: PIC24FJ_OS/OS/Src/IC.c  .generated_files/flags/default/b60dd4e4c1001312b7641e62582bd2ce644823b0 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/IC.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/IC.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o: PIC24FJ_OS/OS/Src/MemMap.c  .generated_files/flags/default/fbce12ee64278fb292b9b9b7a0e16c6892f31442 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o: PIC24FJ_OS/OS/Src/MemMap.c  .generated_files/flags/default/a988e1b7e3002e95543f79ed942da48306c27e3f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/MemMap.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/MemMap.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o: PIC24FJ_OS/OS/Src/OS.c  .generated_files/flags/default/8023dee5afdba7e45d72f3a3977bd9e617672351 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o: PIC24FJ_OS/OS/Src/OS.c  .generated_files/flags/default/40244636d0a586c2cf66b466db701a5b618b11b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/OS.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/OS.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o: PIC24FJ_OS/OS/Src/SC.c  .generated_files/flags/default/51ce758e4cd4fa91e3c3c5a6ae1e3f2245722de3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o: PIC24FJ_OS/OS/Src/SC.c  .generated_files/flags/default/c86cfc229bca51963e8597f6e12eb4ba75971098 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/SC.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/SC.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o: PIC24FJ_OS/OS/Src/TIM.c  .generated_files/flags/default/c2b1521f416009866aa51025e24cde8179848a88 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o: PIC24FJ_OS/OS/Src/TIM.c  .generated_files/flags/default/e358c08d7e03943330ec821d09e201f0c0523e4d .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o.d 
 	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/TIM.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/TIM.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/Src/main.o: Src/main.c  .generated_files/flags/default/2b4f51e6bdb01448f8fafb6609a0392909b4e8c5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/Src/main.o: Src/main.c  .generated_files/flags/default/1f2742b8811ccbc5d18bf632e76ae788ba530892 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Src" 
 	@${RM} ${OBJECTDIR}/Src/main.o.d 
 	@${RM} ${OBJECTDIR}/Src/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/main.c  -o ${OBJECTDIR}/Src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/main.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/main.c  -o ${OBJECTDIR}/Src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o: Src/Cfg/OS_Tasklist_Stub.c  .generated_files/flags/default/bcea84e2f260e13469dd9e878c2e38a952330cdd .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o: Src/Cfg/OS_Tasklist_Stub.c  .generated_files/flags/default/b534983861cf4a9269d0abd551d78cebc40ca417 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Src/Cfg" 
 	@${RM} ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o.d 
 	@${RM} ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/Cfg/OS_Tasklist_Stub.c  -o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/Cfg/OS_Tasklist_Stub.c  -o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/Src/DataDisplay.o: Src/DataDisplay.c  .generated_files/flags/default/c5e277a7c6877b5195f526fbc843e987619ff73e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/Src/DataDisplay.o: Src/DataDisplay.c  .generated_files/flags/default/a7763738e5e66f60b869b8b62408eae06a5d504b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Src" 
 	@${RM} ${OBJECTDIR}/Src/DataDisplay.o.d 
 	@${RM} ${OBJECTDIR}/Src/DataDisplay.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/DataDisplay.c  -o ${OBJECTDIR}/Src/DataDisplay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/DataDisplay.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/DataDisplay.c  -o ${OBJECTDIR}/Src/DataDisplay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/DataDisplay.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/Src/LCD_Driver.o: Src/LCD_Driver.c  .generated_files/flags/default/e5e46ec89150d693328dfb4a8892b666a9b8d607 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/Src/LCD_Driver.o: Src/LCD_Driver.c  .generated_files/flags/default/d88ad8658bf4d4619f4fd315b67b18e5053827f7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Src" 
 	@${RM} ${OBJECTDIR}/Src/LCD_Driver.o.d 
 	@${RM} ${OBJECTDIR}/Src/LCD_Driver.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/LCD_Driver.c  -o ${OBJECTDIR}/Src/LCD_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/LCD_Driver.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/LCD_Driver.c  -o ${OBJECTDIR}/Src/LCD_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/LCD_Driver.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/Src/SHT_Driver.o: Src/SHT_Driver.c  .generated_files/flags/default/5e0690d8a1d07804040ef0b902db56076de226a2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/Src/SHT_Driver.o: Src/SHT_Driver.c  .generated_files/flags/default/2248acff7c882055494e71683ced6c2ddce76c1c .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/Src" 
 	@${RM} ${OBJECTDIR}/Src/SHT_Driver.o.d 
 	@${RM} ${OBJECTDIR}/Src/SHT_Driver.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/SHT_Driver.c  -o ${OBJECTDIR}/Src/SHT_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/SHT_Driver.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/SHT_Driver.c  -o ${OBJECTDIR}/Src/SHT_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/SHT_Driver.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 else
 ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o: PIC24FJ_OS/OS/Src/GPIO.c  .generated_files/flags/default/8a16c33d341958018f60bc91e70c4d72bea56ee7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -253,7 +253,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${DISTDIR}/HumidityMonitor.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o ${DISTDIR}/HumidityMonitor.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG=__DEBUG   -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc"     -Wl,--local-stack,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,-D__DEBUG=__DEBUG,,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem,--memorysummary,${DISTDIR}/memoryfile.xml$(MP_EXTRA_LD_POST)  -mdfp="${DFP_DIR}/xc16" 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o ${DISTDIR}/HumidityMonitor.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG=__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc"  -mreserve=data@0x800:0x81B -mreserve=data@0x81C:0x81D -mreserve=data@0x81E:0x81F -mreserve=data@0x820:0x821 -mreserve=data@0x822:0x823 -mreserve=data@0x824:0x827 -mreserve=data@0x82A:0x84F   -Wl,--local-stack,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,-D__DEBUG=__DEBUG,--defsym=__MPLAB_DEBUGGER_PK3=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem,--memorysummary,${DISTDIR}/memoryfile.xml$(MP_EXTRA_LD_POST)  -mdfp="${DFP_DIR}/xc16" 
 	
 else
 ${DISTDIR}/HumidityMonitor.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   

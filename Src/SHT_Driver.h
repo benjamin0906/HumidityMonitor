@@ -15,6 +15,8 @@ extern "C" {
     extern void SHT_Runnable(void);
     extern uint16 SHT_GetTemperature(void);
     extern uint16 SHT_GetHumidity(void);
+    extern uint16 SHT_GetTemperature_SHT21(void);
+    extern uint16 SHT_GetHumidity_SHT21(void);
 
 
 #ifdef	__cplusplus

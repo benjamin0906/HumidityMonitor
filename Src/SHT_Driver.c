@@ -56,15 +56,16 @@ uint16 SHT_GetHumidity(void);
 
 void SHT_Runnable(void)
 {
+    uint8 tCmd = SHT41_Cmd_HighWoHeat;
     uint8 ReadData[3];
     uint8 SHT41Data[6];
+    uint16 tHum;
     uint32 TemperatureRaw;
     uint32 HumidityRaw;
-    uint32 TempQ7;
-    dtI2cTransaction Sht41Cmd = {.SlaveAddress = 0x44, .Data = &SHT41_Cmd_HighWoHeat, .DataLength = 1, .Mode = I2c_RawWrite};
-    dtI2cTransaction Sht41Rd = {.SlaveAddress = 0x44, .Data = &SHT41Data, .DataLength = 6, .Mode = I2c_RawRead};
-    dtI2cTransaction Sht21Cmd = {.SlaveAddress = 0x40, .SubAddress = &Cmd_TempMeasHold, .SubAddressLength = 1, .Data = &ReadData, .DataLength = 3, .Mode = I2c_RegRead};
-    dtI2cTransaction Sht21CmdHum = {.SlaveAddress = 0x40, .SubAddress = &Cmd_HumMeasHold, .SubAddressLength = 1, .Data = &ReadData, .DataLength = 3, .Mode = I2c_RegRead};
+    dtI2cTransaction Sht41Cmd = {.SlaveAddress = 0x44, .Data = &tCmd, .DataLength = 1, .Mode = I2c_RawWrite};
+    dtI2cTransaction Sht41Rd = {.SlaveAddress = 0x44, .Data = &SHT41Data[0], .DataLength = 6, .Mode = I2c_RawRead};
+    dtI2cTransaction Sht21Cmd = {.SlaveAddress = 0x40, .SubAddress = &Cmd_TempMeasHold, .SubAddressLength = 1, .Data = &ReadData[0], .DataLength = 3, .Mode = I2c_RegRead};
+    dtI2cTransaction Sht21CmdHum = {.SlaveAddress = 0x40, .SubAddress = &Cmd_HumMeasHold, .SubAddressLength = 1, .Data = &ReadData[0], .DataLength = 3, .Mode = I2c_RegRead};
     
     I2C_Transaction(I2C_1, &Sht41Cmd);
     while(I2C_Ok != I2C_Transaction(I2C_1, &Sht41Rd));
@@ -73,7 +74,16 @@ void SHT_Runnable(void)
     TemperatureX100 = (uint16)((uint32)((uint32) TemperatureRaw * 175 * 100 - 294907500)/65535);
     
     HumidityRaw = ((uint16) SHT41Data[3] << 8) | ((uint16) SHT41Data[4]);
-    HumidityX100 = (uint16)((uint32)((uint32) HumidityRaw * 125 * 100 - 39321000)/65535);
+    tHum = (uint16)((uint32)((uint32) HumidityRaw * 125 * 100 - 39321000)/65535);
+    
+    if(tHum < 10100)
+    {
+        HumidityX100 = tHum;
+    }
+    else
+    {
+        HumidityX100 = 0xFFFF;
+    }
     
     I2C_Transaction(I2C_1, &Sht21Cmd);
     TemperatureRaw = (uint16) ReadData[0] << 8;
@@ -83,8 +93,17 @@ void SHT_Runnable(void)
     I2C_Transaction(I2C_1, &Sht21CmdHum);
     HumidityRaw = (uint16) ReadData[0] << 8;
     HumidityRaw |= (uint16) ReadData[1];
+    tHum = (uint16)(((uint32)((uint32)HumidityRaw *12500) >> 16) -600);
     
-    HumidityX100_SHT21 = (uint16)(((uint32)((uint32)HumidityRaw *12500) >> 16) -600);
+    if(tHum < 10100)
+    {
+        HumidityX100_SHT21 = tHum;
+    }
+    else
+    {
+        HumidityX100_SHT21 = 0xFFFF;
+    }
+    
 }
 
 uint16 SHT_GetTemperature(void)

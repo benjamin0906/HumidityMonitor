@@ -24,7 +24,8 @@ extern "C" {
         } Bit;
     } dtLcdPos;
     
-    extern void LCD_Set(dtLcdPos Pos, uint8* String, uint8 Size);
+extern void LCD_Set(dtLcdPos Pos, uint8* String, uint8 Size);
+extern void LCD_ClearAndSet(dtLcdPos Pos, uint8* String, uint8 Size);
 
 
 #ifdef	__cplusplus

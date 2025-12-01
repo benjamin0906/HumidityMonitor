@@ -12,6 +12,7 @@
 #include "../PIC24FJ_OS/OS/Inc/OS_Ext.h"
 #include "../PIC24FJ_OS/Config/config.h"
 #include "../PIC24FJ_OS/OS/Inc/I2C.h"
+#include "SHT_Driver.h"
 
 void Task(void)
 {
@@ -45,10 +46,11 @@ void Task2(void)
     }
 }
 
-void main(void)
+int main(void)
 {
     OS_Init();
     while(1)
     {
     }
+    return 0;
 }

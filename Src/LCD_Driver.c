@@ -1,6 +1,7 @@
 #include "Std_Types.h"
 #include "LCD_Driver.h"
 #include "GPIO.h"
+#include "../PIC24FJ_OS/OS/Inc/OS_Ext.h"
 
 #define PIN_D4  GPIO_PB3
 #define PIN_D5  GPIO_PB2
