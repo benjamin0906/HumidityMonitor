@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=PIC24FJ_OS/OS/Src/GPIO.c PIC24FJ_OS/OS/Src/I2C.c PIC24FJ_OS/OS/Src/IC.c PIC24FJ_OS/OS/Src/MemMap.c PIC24FJ_OS/OS/Src/OS.c PIC24FJ_OS/OS/Src/SC.c PIC24FJ_OS/OS/Src/TIM.c Src/main.c Src/Cfg/OS_Tasklist_Stub.c Src/DataDisplay.c Src/LCD_Driver.c Src/SHT_Driver.c
+SOURCEFILES_QUOTED_IF_SPACED=PIC24FJ_OS/OS/Src/GPIO.c PIC24FJ_OS/OS/Src/I2C.c PIC24FJ_OS/OS/Src/IC.c PIC24FJ_OS/OS/Src/MemMap.c PIC24FJ_OS/OS/Src/OS.c PIC24FJ_OS/OS/Src/SC.c PIC24FJ_OS/OS/Src/TIM.c Src/main.c Src/Cfg/OS_Tasklist_Stub.c Src/DataDisplay.c Src/LCD_Driver.c Src/SHT_Driver.c PIC24FJ_OS/OS/Src/PMD.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o ${OBJECTDIR}/Src/main.o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o ${OBJECTDIR}/Src/DataDisplay.o ${OBJECTDIR}/Src/LCD_Driver.o ${OBJECTDIR}/Src/SHT_Driver.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o.d ${OBJECTDIR}/Src/main.o.d ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o.d ${OBJECTDIR}/Src/DataDisplay.o.d ${OBJECTDIR}/Src/LCD_Driver.o.d ${OBJECTDIR}/Src/SHT_Driver.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o ${OBJECTDIR}/Src/main.o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o ${OBJECTDIR}/Src/DataDisplay.o ${OBJECTDIR}/Src/LCD_Driver.o ${OBJECTDIR}/Src/SHT_Driver.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o.d ${OBJECTDIR}/Src/main.o.d ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o.d ${OBJECTDIR}/Src/DataDisplay.o.d ${OBJECTDIR}/Src/LCD_Driver.o.d ${OBJECTDIR}/Src/SHT_Driver.o.d ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o ${OBJECTDIR}/Src/main.o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o ${OBJECTDIR}/Src/DataDisplay.o ${OBJECTDIR}/Src/LCD_Driver.o ${OBJECTDIR}/Src/SHT_Driver.o
+OBJECTFILES=${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/I2C.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/IC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/MemMap.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/OS.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/SC.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/TIM.o ${OBJECTDIR}/Src/main.o ${OBJECTDIR}/Src/Cfg/OS_Tasklist_Stub.o ${OBJECTDIR}/Src/DataDisplay.o ${OBJECTDIR}/Src/LCD_Driver.o ${OBJECTDIR}/Src/SHT_Driver.o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o
 
 # Source Files
-SOURCEFILES=PIC24FJ_OS/OS/Src/GPIO.c PIC24FJ_OS/OS/Src/I2C.c PIC24FJ_OS/OS/Src/IC.c PIC24FJ_OS/OS/Src/MemMap.c PIC24FJ_OS/OS/Src/OS.c PIC24FJ_OS/OS/Src/SC.c PIC24FJ_OS/OS/Src/TIM.c Src/main.c Src/Cfg/OS_Tasklist_Stub.c Src/DataDisplay.c Src/LCD_Driver.c Src/SHT_Driver.c
+SOURCEFILES=PIC24FJ_OS/OS/Src/GPIO.c PIC24FJ_OS/OS/Src/I2C.c PIC24FJ_OS/OS/Src/IC.c PIC24FJ_OS/OS/Src/MemMap.c PIC24FJ_OS/OS/Src/OS.c PIC24FJ_OS/OS/Src/SC.c PIC24FJ_OS/OS/Src/TIM.c Src/main.c Src/Cfg/OS_Tasklist_Stub.c Src/DataDisplay.c Src/LCD_Driver.c Src/SHT_Driver.c PIC24FJ_OS/OS/Src/PMD.c
 
 
 
@@ -161,6 +161,12 @@ ${OBJECTDIR}/Src/SHT_Driver.o: Src/SHT_Driver.c  .generated_files/flags/default/
 	@${RM} ${OBJECTDIR}/Src/SHT_Driver.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/SHT_Driver.c  -o ${OBJECTDIR}/Src/SHT_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/SHT_Driver.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o: PIC24FJ_OS/OS/Src/PMD.c  .generated_files/flags/default/5fe68e877ac8ddd67110ac292c9f968014c280d7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
+	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o.d 
+	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/PMD.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
 else
 ${OBJECTDIR}/PIC24FJ_OS/OS/Src/GPIO.o: PIC24FJ_OS/OS/Src/GPIO.c  .generated_files/flags/default/8a16c33d341958018f60bc91e70c4d72bea56ee7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
@@ -233,6 +239,12 @@ ${OBJECTDIR}/Src/SHT_Driver.o: Src/SHT_Driver.c  .generated_files/flags/default/
 	@${RM} ${OBJECTDIR}/Src/SHT_Driver.o.d 
 	@${RM} ${OBJECTDIR}/Src/SHT_Driver.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  Src/SHT_Driver.c  -o ${OBJECTDIR}/Src/SHT_Driver.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/Src/SHT_Driver.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o: PIC24FJ_OS/OS/Src/PMD.c  .generated_files/flags/default/e52540498a64046d88ec84e6f9ecd4646470e7af .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/PIC24FJ_OS/OS/Src" 
+	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o.d 
+	@${RM} ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  PIC24FJ_OS/OS/Src/PMD.c  -o ${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PIC24FJ_OS/OS/Src/PMD.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"PIC24FJ_OS/OS/Inc" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 endif
 

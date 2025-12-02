@@ -13,6 +13,7 @@
 #include "../PIC24FJ_OS/Config/config.h"
 #include "../PIC24FJ_OS/OS/Inc/I2C.h"
 #include "SHT_Driver.h"
+#include "../PIC24FJ_OS/OS/Inc/PMD.h"
 
 void Task(void)
 {
@@ -48,6 +49,34 @@ void Task2(void)
 
 int main(void)
 {
+    PMD_Set(Pmd_ADC1);
+    PMD_Set(Pmd_CMP);
+    PMD_Set(Pmd_CRC);
+    PMD_Set(Pmd_CRY);
+    PMD_Set(Pmd_CTMU);
+    PMD_Set(Pmd_DSM);
+    PMD_Set(Pmd_IC1);
+    PMD_Set(Pmd_IC2);
+    PMD_Set(Pmd_IC3);
+    PMD_Set(Pmd_IC4);
+    PMD_Set(Pmd_IC5);
+    PMD_Set(Pmd_IC6);
+    PMD_Set(Pmd_OC1);
+    PMD_Set(Pmd_OC2);
+    PMD_Set(Pmd_OC3);
+    PMD_Set(Pmd_OC4);
+    PMD_Set(Pmd_OC5);
+    PMD_Set(Pmd_OC6);
+    PMD_Set(Pmd_PMP);
+    PMD_Set(Pmd_SPI1);
+    PMD_Set(Pmd_SPI2);
+    PMD_Set(Pmd_SPI3);
+    PMD_Set(Pmd_U1);
+    PMD_Set(Pmd_U2);
+    PMD_Set(Pmd_U3);
+    PMD_Set(Pmd_U4);
+    PMD_Set(Pmd_UPWM);
+    PMD_Set(Pmd_USB1);
     OS_Init();
     while(1)
     {
