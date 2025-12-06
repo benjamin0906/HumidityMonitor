@@ -7,7 +7,9 @@
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/Config/OS_Taskconfig_Stub.h</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Src/GPIO.c</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Src/OS.c</file>
+            <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Inc/SC_MemMap.h</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Src/I2C.c</file>
+            <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Src/SC.c</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/PIC24FJ_OS/OS/Inc/I2C.h</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/Src/DataDisplay.c</file>
             <file>file:/C:/Users/Benjamin/MPLABXProjects/HumidityMonitor/Src/LCD_Driver.c</file>
