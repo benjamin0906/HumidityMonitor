@@ -139,6 +139,7 @@ void LCD_Driver_Runnable(void)
                     }
                 }
             }
+            OS_Delay(10);
                 break;
         }
     }

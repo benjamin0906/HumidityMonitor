@@ -14,6 +14,7 @@
 #include "../PIC24FJ_OS/OS/Inc/I2C.h"
 #include "SHT_Driver.h"
 #include "../PIC24FJ_OS/OS/Inc/PMD.h"
+#include "SC.h"
 
 void Task(void)
 {
@@ -77,6 +78,7 @@ int main(void)
     PMD_Set(Pmd_U4);
     PMD_Set(Pmd_UPWM);
     PMD_Set(Pmd_USB1);
+    SC_SetRetentionMode(1);
     OS_Init();
     while(1)
     {
